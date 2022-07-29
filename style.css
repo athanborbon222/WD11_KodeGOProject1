@@ -6,3 +6,8 @@ body {
 .cardbg{
 background-color: rgb(0, 0, 0, 0.9);
 }
+
+.cardfootertext{
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
