@@ -6,3 +6,7 @@ body {
 .cardbg{
 background-color: rgb(0, 0, 0, 0.9);
 }
+
+.cardfootertext{
+    font-size: large;
+}
