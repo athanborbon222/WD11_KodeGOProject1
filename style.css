@@ -1,21 +1,47 @@
 body {
-    background: rgb(0, 0, 0);
+    background-color: #5F5B57;
 }
+
+
+
+
+.nav-link, .nav-link-button{
+    width:150px;
+    font-family: 'Koulen', cursive;
+}
+.navbar-brand{
+    
+    font-family: 'Koulen', cursive;
+}
+
 
 
 .cardbg{
 background-color: rgb(0, 0, 0, 0.9);
 }
 
-.cardfootertext{
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 .cardshadow{
     box-shadow: 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1);
 }
 
 .fa-brands{
-    color: black;
+    color: whitesmoke;
+    
+}
+
+.txtfa{
+    text-decoration-line: none;
+}
+
+
+.txtBanner{
+    font-family: 'Koulen', cursive;
+    text-shadow: 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1);
+
+}
+
+.subMenu{
+    text-decoration-line: none;   
+    font-family: 'Koulen', cursive;
 }
