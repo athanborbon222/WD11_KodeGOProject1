@@ -1,7 +1,10 @@
 
 body {
-    background-color: #5F5B57;
+
+    background-color: #535252;
+    
 }
+
 
 
 
@@ -17,13 +20,11 @@ body {
 
 
 
-.cardbg{
-background-color: rgb(0, 0, 0, 0.9);
-}
+
 
 
 .cardshadow{
-    box-shadow: 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1), 4px 4px 0 rgb(255, 255, 255, 0.1);
+    box-shadow:  0px 0px 5px 3px rgba(228, 219, 219, 0.5);
 }
 
 .fa-brands{
@@ -46,5 +47,22 @@ background-color: rgb(0, 0, 0, 0.9);
     text-decoration-line: none;   
     font-family: 'Koulen', cursive;
 }
-=======
->>>>>>> origin/Bentorres_WD11
+
+
+
+.map-wrapper{
+    max-width: 700px;
+    border: 3px solid black;
+}
+.googlemap {
+    width: 100%;
+}
+
+
+#cont1, #cont2, #cont3, #cont4{
+    background-image: url('image/plate.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    
+}

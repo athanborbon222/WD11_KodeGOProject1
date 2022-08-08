@@ -1,0 +1,39 @@
+// cards
+$card-bg: black;
+$card-border-width: 10px;
+$card-border-radius:  0;
+
+// anchor links
+$link-color: white;
+$link-decoration: none;
+$link-hover-color: black;
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// $card-spacer-y:                     $spacer !default;
+// $card-spacer-x:                     $spacer !default;
+// $card-title-spacer-y:               $spacer * .5 !default;
+// $card-border-width:                 $border-width !default;
+// $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
+// $card-border-radius:                $border-radius !default;
+// $card-box-shadow:                   null !default;
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+// $card-cap-padding-y:                $card-spacer-y * .5 !default;
+// $card-cap-padding-x:                $card-spacer-x !default;
+// $card-cap-bg:                       rgba($black, .03) !default;
+// $card-cap-color:                    null !default;
+// $card-height:                       null !default;
+// $card-color:                        null !default;
+// $card-bg:                           $white !default;
+// $card-img-overlay-padding:          $spacer !default;
+// $card-group-margin:                 $grid-gutter-width * .5 !default;
+
+// $link-color:                              $primary !default;
+// $link-decoration:                         underline !default;
+// $link-shade-percentage:                   20% !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-decoration:                   null !default;
