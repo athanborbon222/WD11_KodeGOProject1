@@ -1,9 +1,16 @@
 body {
+
 background-image: url('image/plate.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
+
+    background-color: #535252;
+    background-image: url('image/plate.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
     
 }
 
@@ -14,10 +21,12 @@ background-attachment: fixed;
 .nav-link, .nav-link-button{
     width:150px;
     font-family: 'Koulen', cursive;
+    font-size: 1.5vw;
 }
 .navbar-brand{
     
     font-family: 'Koulen', cursive;
+    font-size: 2vw;
 }
 
 
@@ -58,11 +67,3 @@ background-attachment: fixed;
     width: 100%;
 }
 
-
-#cont1, #cont2, #cont3, #cont4{
-    background-image: url('image/plate.jpg');
-    background-position: center;
-    background-size: cover;
-    
-    
-}
