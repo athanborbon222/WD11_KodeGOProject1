@@ -29,11 +29,11 @@ body {
     
 }
 
-.text-white{
+.text-white, .modal-txt{
     font-family: 'Koulen', cursive;
 }
 
-.description{
+.description, label{
     font-family: 'K2D';
     font-size: medium;
 }

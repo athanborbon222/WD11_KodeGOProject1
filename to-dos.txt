@@ -3,4 +3,6 @@ styling for modals
 about us
 review page
 footer - links
-carousel -banner
+button to the right
+burger of the month modals
+done- carousel -banner
