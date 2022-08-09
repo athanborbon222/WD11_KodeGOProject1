@@ -1,0 +1,6 @@
+checkbox for modals
+styling for modals
+about us
+review page
+footer - links
+carousel -banner
