@@ -2,6 +2,9 @@
 body {
 
     background-color: #535252;
+    background-image: url('image/plate.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
@@ -12,10 +15,12 @@ body {
 .nav-link, .nav-link-button{
     width:150px;
     font-family: 'Koulen', cursive;
+    font-size: 1.5vw;
 }
 .navbar-brand{
     
     font-family: 'Koulen', cursive;
+    font-size: 2vw;
 }
 
 
@@ -58,11 +63,3 @@ body {
     width: 100%;
 }
 
-
-#cont1, #cont2, #cont3, #cont4{
-    background-image: url('image/plate.jpg');
-    background-position: center;
-    background-size: cover;
-    
-    
-}
