@@ -1,9 +1,13 @@
+
 body {
 
-    background-color: #535252;
-    background-image: url('image/plate.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+background-image: url('image/plate.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
+
     
 }
 
@@ -73,6 +77,8 @@ p{
     text-decoration-line: none;   
     font-family: 'Koulen', cursive;
 }
+
+
 
 .map-wrapper{
     max-width: 700px;
