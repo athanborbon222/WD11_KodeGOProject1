@@ -1,14 +1,11 @@
 
 body {
-
 background-image: url('image/plate.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
-
-
-    
+   
 }
 
 
@@ -30,7 +27,7 @@ background-attachment: fixed;
     height: 650px;
     object-fit: cover;
     object-position: center;
-    
+        
 }
 
 .text-white, .modal-txt{
