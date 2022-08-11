@@ -1,14 +1,11 @@
 
 body {
-
 background-image: url('image/plate.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
-
-
-    
+   
 }
 
 
@@ -28,9 +25,14 @@ background-attachment: fixed;
 
 .carousel-item img{
     object-fit: cover;
+
     object-position: cover;
     min-width: 100%;
     
+
+    object-position: center;
+        
+
 }
 
 .text-white, .modal-txt{

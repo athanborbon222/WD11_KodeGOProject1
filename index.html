@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">
+          <a class="navbar-brand text-light" href="index.html">
             <img src="image/111.png"  style="width: 10%; height: 10%" class="rounded-circle">&nbsp; Hey! Ho! Garage Burger</a>
             
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,10 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="About.html">About Us</a>
               </li>
+              <li class="cart"> <a class="btn btn-outline-danger nav-link-button" type="submit" href="cart.html">Cart <span class="text-white">0</span></a></li>
+              
             </ul>
-            <button class="btn btn-outline-danger nav-link-button" type="submit">Cart</button>
+            
           </div>
         </div>
       </nav>
@@ -100,7 +102,7 @@
                     <h3 class="text-white">HAVANA AFFAIR</h3>
                 </div>
                 <div class="card-body p-0 text-center">
-                    <img src="image/b1.png" class="img-fluid" style="width: 350px; height: 300px">
+                    <img src="image/b1.png" class="img-fluid rounded" style="width: 350px; height: 300px">
                 </div>
                 <div class="card-footer">
                     <p class="text-light description" style="width: 350px;">1/3 lb. 50/50 beef & house pork chorizo patty,
@@ -129,8 +131,8 @@
                 <h1 class="text-white">July</h1>
                 <h3 class="text-white">MC5</h3>
             </div>
-            <div class="card-body">
-                <img src="image/b1.jpg" class="img-fluid" style="width: 350px; height: 300px">
+            <div class="card-body p-0">
+                <img src="image/b1.jpg" class="img-fluid rounded" style="width: 350px; height: 300px">
             </div>
             <div class="card-footer">
                 <p class="text-light description" style="width: 350px;">
@@ -157,7 +159,7 @@
                 <h1 class="text-white">June</h1>
                 <h3 class="text-white">PATTY SMITH</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
                 <img src="image/b3.png" class="img-fluid" style="width: 350px; height: 300px">
             </div>
             <div class="card-footer">
@@ -180,7 +182,7 @@
 
 
     <h1 class="text-center text-light display-1 txtBanner">News</h1>
-    <banner class="container">
+    <banner class="container-fluid">
         <div class="d-flex justify-content-evenly flex-wrap">
         <div class="col-md-3"></div>   
         <div class="col-md-6">
@@ -194,7 +196,7 @@
 
 <h1 class="text-light display-1 text-center txtBanner"> Our Menu</h1>
     <div class="container-fluid  sticky-top" id="OurMenu">
-        <div class="row pt-5 pb-5 flex-wrap text-center" style= "background-color: #8C1111;">
+        <div class="row pt-5 pb-5 flex-wrap justify-content-around text-center" style="background-color: #8C1111;">
             <div class="col-md-3 text-white">
                 <a href="#cont1" class="subMenu display-6">BURGERS</a>
             </div>
@@ -225,7 +227,11 @@
                     <img src="image/1.jpg" class="img-fluid" style="width: 350px; height: 300px">
                 </div>
                 <div class="card-footer">
+
                     <p class="text-light description" style="width: 350px;">
+
+                    <p class="text-light description p-3">
+
                         cheese, bun, g burg
                         <br><br>
                     </p>
@@ -586,7 +592,7 @@
 
     <div class="container-fluid" id="cont4">
         <h1 class="text-center text-light display-1  txtBanner mt-5 pt-5">Non-burgers</h1>
-        <div class="d-flex justify-content-evenly flex-wrap mt-5 pb-5">
+        <div class="d-flex justify-content-evenly flex-wrap mt-5">
 
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -597,11 +603,16 @@
                     <img src="image/N1.jpg" class="img-fluid" style="width: 350px; height: 300px">
                 </div> 
                 <div class="card-footer">
+
                     <p class="text-light description" style="width: 350px;">
                         hungarian sausage, cheese, onions, pickles, honey mustard
+
+                    <p class="text-light description" style="width: 400px;">
+                        hungarian sausage, cheese, onions,  pickles, honey mustard
+
                         <br>
                     </p>
-                    <div class="d-flex justify-content-between text-white">
+                    <div class="d-flex justify-content-between flex-wrap text-white">
                         <h3>Price: 195</h3>
                         <button class="btn btn-outline-warning btn-dark" data-bs-toggle="modal" data-bs-target="#n1Modal">
                             add to cart
@@ -675,12 +686,17 @@
     </div>
 <!-- #end for cont4 (non-burger)-->
 
+
 <div class="d-flex align-items-center justify-content-around bg-black" style="height:80px;">
     <a href="image/menu/1.jpg" class="btn btn-outline-danger body-main-button">Download Our Menu</a>
 </div>
 
 <div class="container-fluid bg-warning">
     <div class="invisible">invisible text</div>
+
+<div class="d-flex align-items-center justify-content-around bg-black flex-wrap" style="height:100px;">
+    <button class="btn btn-outline-danger body-main-button">Download Our Menu</button>
+
 </div>
 
 <!-- footer  -->
@@ -899,19 +915,19 @@
                         <label>Add them up!</label>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add1"><label>patty</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add1"><label>patty</label></span>
                                 <span> 90 pesos</span>
                             </span>   
                         </div>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add2"><label>cheese</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add2"><label>cheese</label></span>
                                 <span> 25 pesos</span>
                             </span>   
                         </div>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add3"><label>bacon</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add3"><label>bacon</label></span>
                                 <span> 25 pesos</span>
                             </span>   
                         </div>
@@ -959,19 +975,20 @@
                         <br><br>
                         <span class="d-flex justify-content-between">
                             <span><h1 class="modal-txt">CBGB</h1></span>
+
                             <span>145 pesos</span>
+
+                            <span id="amount" value="145">145 Pesos</span>
+
                         </span>
                         <p>cheese, bun, g burg</p>
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity1">
+                             
+                            <label id="price"></label>
+                            
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1019,7 +1036,7 @@
                         <br><br>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                            <button class="btn-secondary add-cart cart1" data-bs-dismiss="modal">Check Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1039,14 +1056,11 @@
                         <p>cheese, tomato, onions, greens</p>
                         <hr>
                         <div class="form-group">
-                            <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <label>Quantity:</label>
+                            <input type="number" name="txt" id="quantity2">
+                             
+                            <label id="price2"></label>
+                           
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1094,7 +1108,7 @@
                         <br><br>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                            <button class="btn btn-secondary add-cart cart2" data-bs-dismiss="modal">Check Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1115,13 +1129,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity3">
+                             
+                            <label id="price3"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1169,7 +1179,7 @@
                         <br><br>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                            <button class="btn btn-secondary add-cart cart3" data-bs-dismiss="modal">Check Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1190,13 +1200,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity4">
+                             
+                            <label id="price4"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1244,7 +1250,7 @@
                         <br><br>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                            <button class="btn btn-secondary add-cart cart4" data-bs-dismiss="modal">Check Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1265,13 +1271,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity5">
+                             
+                            <label id="price5"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1319,7 +1321,7 @@
                         <br><br>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                            <button class="btn btn-secondary add-cart cart5" data-bs-dismiss="modal">Check Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1975,6 +1977,18 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+        <script src="heyho.js"></script>
+        <script src="heyho2.js"></script>
+       
     
 </body>
 <script src="js/bootstrap.bundle.js"></script>
