@@ -10,32 +10,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <div class="container-fluid">
+
+          <a class="navbar-brand text-light" href="index.html">
+            <img src="image/logo1.jpg"  style="width: 10%; height: 10%" class="rounded-circle">&nbsp; Hey! Ho! Garage Burger</a>
+
           <a class="navbar-brand text-light" href="#">
             <img src="image/111.png"  style="width: 10%; height: 10%" class="rounded-circle">&nbsp; Hey! Ho! Garage Burger</a>
+
             
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Menu</a>
+                <a class="nav-link text-light" href="index.html#OurMenu">Menu</a>
               </li>
               <li class="nav-item"> 
-                <a class="nav-link text-light" href="#">Reviews</a>
+                <a class="nav-link text-light" href="review.html">Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="About.html">About Us</a>
+                <a class="nav-link text-warning" href="About.html">About Us</a>
               </li>
             </ul>
             <button class="btn btn-outline-danger nav-link-button" type="submit">Cart</button>
@@ -43,11 +48,33 @@
         </div>
       </nav>
       <br><br><br><br>
-      
+    
+    <h1 class="text-center text-light display-1 txtBanner">Hey Ho!</h1><br><br>
 
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="bg-black text-light p-5 rounded mb-4" style="font-size:4vh; text-align: justify; width:100%">
+            Hey Ho! is your local burger shop in Muntinlupa City which offers variety of burgers, chicken wings, snacks, and others. Whether if you are a foodie whose looking for unique and tasty flavors of burger or just someone who likes to eat snack, Hey Ho! Garage Burger is a place to go.
+          </p>
+        </div>
+        <div class="col-md-5 mb-4"><img class="rounded" src="image/about/1.jpg" alt="" style="width: 100%"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 mb-4"><img class="rounded" src="image/about/2.jpg" alt="" style="width: 100%"></div>
+        <div class="col-md-5 mb-4"><img class="rounded" src="image/about/3.jpg" alt="" style="width: 100%"></div>
+      </div>
+    </div>
+    
+
+
+    <br><br>
+    <h1 class="text-center text-light display-1 txtBanner" id="map">Visit Us</h1>
+    <br><br>
 
     <div class="container">
-    <div class="row d-flex flex-wrap">
+    <div class="row d-flex flex-wrap justify-content-around">
       <div class="map-wrapper rounded mb-5 img-fluid">
       <iframe class="googlemap rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.8927420706837!2d121.04319571431792!3d14.37561728640573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d0e870d715d3%3A0x5699ace4739096ba!2sHey%20Ho%20Garage%20Burgers!5e0!3m2!1sen!2sph!4v1659774515944!5m2!1sen!2sph" 
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -55,10 +82,75 @@
 
     </div>
     </div>
+    <br><br><br>
+
+  <!-- Team Members -->
+    <h1 class="text-center text-light display-1 txtBanner" id="team">Meet the team</h1><br><br>   
+    <div class="d-flex justify-content-evenly flex-wrap mt-5">
+            
+            <div class="card cardshadow mb-5">
+                <div class="card-header text-center">
+                    <h1 class="text-white">Jonathan Borbon</h1>
+                    <h3 class="text-white">Lead Programmer</h3>
+                </div>
+                <div class="card-body p-0 text-center">
+                    <img src="image/team/1.jpg" class="img-fluid" style="width: 300px; height: 300px">
+                </div>
+                <div class="card-footer">
+                    <p class="text-light description" style="width: 350px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus, ex aspernatur quod dolor corrupti nisi impedit animi reiciendis rem, adipisci sequi fuga fugiat itaque, numquam nam voluptas sapiente est!
+                        <br><br>
+                    </p>
+                    <div class="d-flex justify-content-between text-white">
+                        <span><h3 class="btn btn-outline-warning">FB</h3>&nbsp;<h3 class="btn btn-outline-warning">IG</h3>&nbsp;<h3 class="btn btn-outline-warning">Ln</h3></span>
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
+                            contact me
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardshadow mb-5">
+              <div class="card-header text-center">
+                  <h1 class="text-white">Mel Benjamen Torres</h1>
+                  <h3 class="text-white">Lead Designer</h3>
+              </div>
+              <div class="card-body p-0 text-center">
+                  <img src="image/team/2.jpg" class="img-fluid" style="width: 300px; height: 300px">
+              </div>
+              <div class="card-footer">
+                  <p class="text-light description" style="width: 350px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque reprehenderit. Pariatur, est expedita fuga dignissimos quae repellendus ipsam inventore provident dolorum, facere sed, voluptatem dolores?
+                      <br><br>
+                  </p>
+                  <div class="d-flex justify-content-between text-white">
+                      <span><h3 class="btn btn-outline-warning">FB</h3>&nbsp;<h3 class="btn btn-outline-warning">IG</h3>&nbsp;<h3 class="btn btn-outline-warning">Ln</h3></span>
+                      <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
+                          contact me
+                      </button>
+                  </div>
+              </div>  
+          </div>
 
 
+          <div class="card cardshadow mb-5">
+            <div class="card-header text-center">
+                <h1 class="text-white">Name</h1>
+                <h3 class="text-white">Position</h3>
+            </div>
+            <div class="card-body p-0 text-center">
+                <img src="image/b1.png" class="img-fluid" style="width: 300px; height: 300px">
+            </div>
+            <div class="card-footer">
+                <p class="text-light description" style="width: 350px;">description
+                    <br><br>
+                </p>
+                <div class="d-flex justify-content-between text-white">
+                    <span><h3 class="btn btn-outline-warning">FB</h3>&nbsp;<h3 class="btn btn-outline-warning">IG</h3>&nbsp;<h3 class="btn btn-outline-warning">Ln</h3></span>
+                    <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
+                        contact me
+                    </button>
+                </div>
+            </div>
 
-    
     <footer>
         <div class="container-fluid bg-dark pt-5 pb-5">
         <div class="d-flex justify-content-around flex-wrap">
@@ -80,8 +172,47 @@
         </div>
             <!-- social media icon -->
         </div>
+
         </div>
-        </footer>
+  
+    </div>
+    <br><br><br><br>
+
+    <!-- footer  -->
+
+    <footer class="bg-black">
+      <div class="container-fluid bg-black  pt-5 pb-5">
+      <div class="d-flex  justify-content-around flex-wrap">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+      <img src="image/111.png" class="img-fluid-circle" style="width: 100px; height: 100px;">
+      <p class="text-light mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
+       </div>
+       <!-- imagelogo footer -->
+       <div class="col-md-2"></div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Our Menu</h3>
+          <a href="index.html#BOTM" class="text-light">Burgers of the Month</a><br>
+          <a href="index.html#OurMenu" class="text-light">Menu</a><br>
+          <a href="image/menu/1.jpg" class="text-light">Download Our Menu</a>
+       </div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Information</h3>
+          <a href="about.html" class="text-light">About Us</a><br>
+          <a href="about.html#map" class="text-light">Location Map</a><br>
+          <a href="about.html#team" class="text-light">Meet the Team</a>
+       </div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Social Handles</h3>
+          <a href="https://www.facebook.com/heyhogarageburgs" class="text-light"><i class="fa-brands fa-facebook fa-2xl p-2"></i>&nbsp;Facebook</a><br><br>
+          <a href="https://www.instagram.com/heyhogburgs" class="text-light"><i class="fa-brands fa-instagram-square fa-2xl p-2"></i>&nbsp;Instagram</a><br>
+       </div>
+       <div class="col-md-1"></div>
+      </div>
+      </div>
+  </footer>
+
+<!-- footer end -->
 
     
 
