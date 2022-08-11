@@ -18,18 +18,18 @@ background-attachment: fixed;
 .nav-link, .nav-link-button{
     width:150px;
     font-family: 'Koulen', cursive;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 .navbar-brand{
     
     font-family: 'Koulen', cursive;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .carousel-item img{
-    height: 650px;
     object-fit: cover;
-    object-position: center;
+    object-position: cover;
+    min-width: 100%;
     
 }
 

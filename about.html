@@ -32,10 +32,10 @@
                 <a class="nav-link text-light" href="index.html#OurMenu">Menu</a>
               </li>
               <li class="nav-item"> 
-                <a class="nav-link text-light" href="#">Reviews</a>
+                <a class="nav-link text-light" href="review.html">Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="About.html">About Us</a>
+                <a class="nav-link text-warning" href="About.html">About Us</a>
               </li>
             </ul>
             <button class="btn btn-outline-danger nav-link-button" type="submit">Cart</button>
@@ -65,7 +65,7 @@
 
 
     <br><br>
-    <h1 class="text-center text-light display-1 txtBanner">Visit Us</h1>
+    <h1 class="text-center text-light display-1 txtBanner" id="map">Visit Us</h1>
     <br><br>
 
     <div class="container">
@@ -80,19 +80,19 @@
     <br><br><br>
 
   <!-- Team Members -->
-    <h1 class="text-center text-light display-1 txtBanner">Meet the team</h1><br><br>   
+    <h1 class="text-center text-light display-1 txtBanner" id="team">Meet the team</h1><br><br>   
     <div class="d-flex justify-content-evenly flex-wrap mt-5">
             
             <div class="card cardshadow mb-5">
                 <div class="card-header text-center">
-                    <h1 class="text-white">Name</h1>
-                    <h3 class="text-white">Position</h3>
+                    <h1 class="text-white">Jonathan Borbon</h1>
+                    <h3 class="text-white">Lead Programmer</h3>
                 </div>
                 <div class="card-body p-0 text-center">
-                    <img src="image/b1.png" class="img-fluid" style="width: 350px; height: 300px">
+                    <img src="image/team/1.jpg" class="img-fluid" style="width: 300px; height: 300px">
                 </div>
                 <div class="card-footer">
-                    <p class="text-light description" style="width: 350px;">description
+                    <p class="text-light description" style="width: 350px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus, ex aspernatur quod dolor corrupti nisi impedit animi reiciendis rem, adipisci sequi fuga fugiat itaque, numquam nam voluptas sapiente est!
                         <br><br>
                     </p>
                     <div class="d-flex justify-content-between text-white">
@@ -106,14 +106,14 @@
 
             <div class="card cardshadow mb-5">
               <div class="card-header text-center">
-                  <h1 class="text-white">Name</h1>
-                  <h3 class="text-white">Position</h3>
+                  <h1 class="text-white">Mel Benjamen Torres</h1>
+                  <h3 class="text-white">Lead Designer</h3>
               </div>
               <div class="card-body p-0 text-center">
-                  <img src="image/b1.png" class="img-fluid" style="width: 350px; height: 300px">
+                  <img src="image/team/2.jpg" class="img-fluid" style="width: 300px; height: 300px">
               </div>
               <div class="card-footer">
-                  <p class="text-light description" style="width: 350px;">description
+                  <p class="text-light description" style="width: 350px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque reprehenderit. Pariatur, est expedita fuga dignissimos quae repellendus ipsam inventore provident dolorum, facere sed, voluptatem dolores?
                       <br><br>
                   </p>
                   <div class="d-flex justify-content-between text-white">
@@ -131,7 +131,7 @@
                 <h3 class="text-white">Position</h3>
             </div>
             <div class="card-body p-0 text-center">
-                <img src="image/b1.png" class="img-fluid" style="width: 350px; height: 300px">
+                <img src="image/b1.png" class="img-fluid" style="width: 300px; height: 300px">
             </div>
             <div class="card-footer">
                 <p class="text-light description" style="width: 350px;">description
@@ -147,31 +147,43 @@
         </div>
   
     </div>
+    <br><br><br><br>
 
-    <!-- footer -->
-    <footer class="bg-dark">
-      <div class="container bg-dark  pt-5 pb-5">
+    <!-- footer  -->
+
+    <footer class="bg-black">
+      <div class="container-fluid bg-black  pt-5 pb-5">
       <div class="d-flex  justify-content-around flex-wrap">
-      <div class="col-md-3">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
       <img src="image/111.png" class="img-fluid-circle" style="width: 100px; height: 100px;">
-      <p class="text-white mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
+      <p class="text-light mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
        </div>
        <!-- imagelogo footer -->
-       <div class="col-md-3"></div>
-       <div class="col-md-3"></div>
-       <div class="col-md-3">
-       <h5 class="text-white ms-3 me-2">Visit us</h5>   
-      <a href="https://www.facebook.com/jonathan.borbon222/" class="txtfa mt-2">
-          <i class="fa-brands fa-facebook fa-2xl p-2"></i>
-           </a>
-          <a href="https://www.instagram.com/athan_borbon/" class="txtfa mt-2">
-              <i class="fa-brands fa-instagram-square fa-2xl p-2"></i>
-          </a>
-      </div>
-          <!-- social media icon -->
+       <div class="col-md-2"></div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Our Menu</h3>
+          <a href="index.html#BOTM" class="text-light">Burgers of the Month</a><br>
+          <a href="index.html#OurMenu" class="text-light">Menu</a><br>
+          <a href="image/menu/1.jpg" class="text-light">Download Our Menu</a>
+       </div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Information</h3>
+          <a href="about.html" class="text-light">About Us</a><br>
+          <a href="about.html#map" class="text-light">Location Map</a><br>
+          <a href="about.html#team" class="text-light">Meet the Team</a>
+       </div>
+       <div class="col-md-2">
+          <h3 class="h3 text-light">Social Handles</h3>
+          <a href="https://www.facebook.com/heyhogarageburgs" class="text-light"><i class="fa-brands fa-facebook fa-2xl p-2"></i>&nbsp;Facebook</a><br><br>
+          <a href="https://www.instagram.com/heyhogburgs" class="text-light"><i class="fa-brands fa-instagram-square fa-2xl p-2"></i>&nbsp;Instagram</a><br>
+       </div>
+       <div class="col-md-1"></div>
       </div>
       </div>
   </footer>
+
+<!-- footer end -->
 
     
 

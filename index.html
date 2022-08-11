@@ -30,13 +30,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#OurMenu">Menu</a>
               </li>
               <li class="nav-item"> 
-                <a class="nav-link text-light" href="#">Reviews</a>
+                <a class="nav-link text-light" href="review.html">Reviews</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="About.html">About Us</a>
@@ -49,6 +49,7 @@
       
       
         <!-- First Carousel -->
+    
     <div id="carouselSlide" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button data-bs-target="#carouselSlide" data-bs-slide-to="0" class="active"></button>
@@ -90,7 +91,7 @@
 
 
 
-    <h1 class="text-center text-light display-1 txtBanner">Burgers of the Month</h1>    
+    <h1 class="text-center text-light display-1 txtBanner" id="BOTM">Burgers of the Month</h1>    
     <div class="d-flex justify-content-evenly flex-wrap mt-5">
             
             <div class="card cardshadow mb-5">
@@ -183,7 +184,7 @@
         <div class="d-flex justify-content-evenly flex-wrap">
         <div class="col-md-3"></div>   
         <div class="col-md-6">
-        <img src="image/banner.jpg" class="img-fluid w-100 rounded cardshadow" style="height: 550px;">
+        <img src="image/banner.jpg" class="img-fluid w-100 rounded cardshadow" style="width: 100%;">
         </div>
         <div class="col-md-3"></div> 
     </div>
@@ -674,34 +675,49 @@
     </div>
 <!-- #end for cont4 (non-burger)-->
 
-<div class="d-flex align-items-center justify-content-around bg-black" style="height:100px;">
-    <button class="btn btn-outline-danger body-main-button">Download Our Menu</button>
+<div class="d-flex align-items-center justify-content-around bg-black" style="height:80px;">
+    <a href="image/menu/1.jpg" class="btn btn-outline-danger body-main-button">Download Our Menu</a>
 </div>
 
+<div class="container-fluid bg-warning">
+    <div class="invisible">invisible text</div>
+</div>
 
-    <footer class="bg-dark">
-        <div class="container bg-dark  pt-5 pb-5">
+<!-- footer  -->
+
+    <footer class="bg-black">
+        <div class="container-fluid bg-black  pt-5 pb-5">
         <div class="d-flex  justify-content-around flex-wrap">
-        <div class="col-md-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
         <img src="image/111.png" class="img-fluid-circle" style="width: 100px; height: 100px;">
-        <p class="text-white mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
+        <p class="text-light mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
          </div>
          <!-- imagelogo footer -->
-         <div class="col-md-3"></div>
-         <div class="col-md-3"></div>
-         <div class="col-md-3">
-         <h5 class="text-white ms-3 me-2">Visit us</h5>   
-        <a href="https://www.facebook.com/jonathan.borbon222/" class="txtfa mt-2">
-            <i class="fa-brands fa-facebook fa-2xl p-2"></i>
-             </a>
-            <a href="https://www.instagram.com/athan_borbon/" class="txtfa mt-2">
-                <i class="fa-brands fa-instagram-square fa-2xl p-2"></i>
-            </a>
-        </div>
-            <!-- social media icon -->
+         <div class="col-md-2"></div>
+         <div class="col-md-2">
+            <h3 class="h3 text-light">Our Menu</h3>
+            <a href="index.html#BOTM" class="text-light">Burgers of the Month</a><br>
+            <a href="index.html#OurMenu" class="text-light">Menu</a><br>
+            <a href="image/menu/1.jpg" class="text-light">Download Our Menu</a>
+         </div>
+         <div class="col-md-2">
+            <h3 class="h3 text-light">Information</h3>
+            <a href="about.html" class="text-light">About Us</a><br>
+            <a href="about.html#map" class="text-light">Location Map</a><br>
+            <a href="about.html#team" class="text-light">Meet the Team</a>
+         </div>
+         <div class="col-md-2">
+            <h3 class="h3 text-light">Social Handles</h3>
+            <a href="https://www.facebook.com/heyhogarageburgs" class="text-light"><i class="fa-brands fa-facebook fa-2xl p-2"></i>&nbsp;Facebook</a><br><br>
+            <a href="https://www.instagram.com/heyhogburgs" class="text-light"><i class="fa-brands fa-instagram-square fa-2xl p-2"></i>&nbsp;Instagram</a><br>
+         </div>
+         <div class="col-md-1"></div>
         </div>
         </div>
     </footer>
+
+<!-- footer end -->
 
         <!-- Start of Modals -->
 
