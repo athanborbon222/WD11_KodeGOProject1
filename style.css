@@ -90,3 +90,80 @@ p{
     width: 100%;
 }
 
+
+/*---cart page---*/
+.cart-container, .products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+.products-container{
+    max-width: 800px;
+    max-height: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+
+.products-container .fa-circle-xmark{
+    font-size: 25px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.product-header{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid whitesmoke;
+    margin: 0 auto;
+    font-family: 'Koulen', cursive;
+}
+
+
+
+.product-title{
+    width: 45%;
+}
+
+.prices{
+    width: 15%;
+    margin-right: 75px;
+    border-bottom: 4px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.numberofItems{
+    width: 30%;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    
+}
