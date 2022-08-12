@@ -4,22 +4,26 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
 
         {
-            name: 'CBGB',
+            name: "CBGB",
+            tag: '1',
             price: 145,
             incart: 0
         },
         {
-            name: 'HEY HO CLASSIC',
+            name: "HEY HO CLASSIC",
+            tag: '2',
             price: 165,
             incart: 0
         },
         {
-            name: 'ABRACADAVER',
+            name: "ABRACADAVER",
+            tag: '3',
             price: 195,
             incart: 0
         },
         {
             name: 'TIME BOMB',
+            tag: '4',
             price: 220,
             incart: 0
         }
@@ -101,4 +105,31 @@ function cartNumbers(products) {
 
     }
 
-    onLoadCartNumbers();            
+    function displaycart(){
+        let cartItems = localStorage.getItem("productsInCart");
+        cartItems = JSON.parse(cartItems);
+        let productContainer = document.querySelector(".products");
+
+
+        console.log(cartItems);
+       if (cartItems && productContainer ) {
+            console.log("running");
+            productContainer.innerHTML = '';
+            Object.values(cartItems).map( item => {
+                productContainer.innerHTML += `
+                <div class="product">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="card me-5">
+                <img src="./image/${item.tag}.jpg" class="img-fluid rounded w-100 cardshadow p-2" style="height: 20%;">
+                <span class="text-white txtBanner h4 p-3">${item.name}</span>
+                </div>
+                </div>
+                `
+
+            });
+       }
+    }
+
+    onLoadCartNumbers();  
+    displaycart();          
+
