@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
 
@@ -11,6 +15,10 @@ background-attachment: fixed;
     
 }
 
+.menu-space{
+    margin: 0;
+}
+
 
 
 
@@ -20,6 +28,12 @@ background-attachment: fixed;
     font-family: 'Koulen', cursive;
     font-size: 2vw;
 }
+
+.dl-link-button{
+    font-family: 'Koulen', cursive;
+    font-size: 2vw;
+}
+
 .navbar-brand{
     
     font-family: 'Koulen', cursive;
