@@ -109,7 +109,8 @@ function cartNumbers(products) {
         let cartItems = localStorage.getItem("productsInCart");
         cartItems = JSON.parse(cartItems);
         let productContainer = document.querySelector(".products");
-
+        
+        
 
         console.log(cartItems);
        if (cartItems && productContainer ) {
@@ -117,14 +118,46 @@ function cartNumbers(products) {
             productContainer.innerHTML = '';
             Object.values(cartItems).map( item => {
                 productContainer.innerHTML += `
+                
+                <table class="cartcont rounded">
+               
+
+                <tr>
+                <td>
                 <div class="product">
-                <i class="fa-solid fa-circle-xmark"></i>
-                <div class="card me-5">
-                <img src="./image/${item.tag}.jpg" class="img-fluid rounded w-100 cardshadow p-2" style="height: 20%;">
-                <span class="text-white txtBanner h4 p-3">${item.name}</span>
+                <i class="fa-solid fa-circle-xmark"></i> 
+                <img src="./image/${item.tag}.jpg" class="img-fluid rounded ms-5" style="width: 250px; height: 250px">
+                <br>
+                <span class="text-white txtBanner h5 ms-2 mt-2">${item.name}</span>
                 </div>
+                </td>
+                
+                <br>
+                <br>
+
+                <td>
+                <div class= "prices text-white"><span class="text-white txtBanner display-3 ms-5 ps-5"> ₱${item.price}</span></div>
+                </td>
+
+                <td>
+                <div class= "quantity text-white ms-5"><span class="text-white txtBanner display-3 ms-5 ps-5"> ${item.incart}</span></div>
                 </div>
+                </td>
+
+                <td>
+                <div class= "total text-white ms-5"><span class="text-white txtBanner display-3 ms-5 ps-5"> ${item.incart * item.price}</span></div>
+                </td>
+                
+
+
+                <td class="ms-5 p-3">
+                <button class="btn btn-outline-warning btn-dark ms-5">Purchase</button>
+                </td>
+                </tr>
+                </table>
+
                 `
+                
 
             });
        }
