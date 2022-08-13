@@ -20,7 +20,6 @@
 
 <body>
 
-
     <header class="d-flex">
         <div class="brand">
             <a href="index.html">
@@ -89,9 +88,8 @@
         <!-- Next -->
     </div>
     <br><br>
-    
 
-
+    <!-- Burgers of the Month -->
 
     <h1 class="text-center text-light display-1 txtBanner" id="BOTM">Burgers of the Month</h1>    
     <div class="d-flex justify-content-evenly flex-wrap mt-5">
@@ -102,7 +100,7 @@
                     <h3 class="text-white">HAVANA AFFAIR</h3>
                 </div>
                 <div class="card-body p-0 text-center">
-                    <img src="image/b1.png" class="img-fluid" style="width: 350px; height: 300px">
+                    <img src="image/b1.png" class="img-fluid rounded" style="width: 350px; height: 300px">
                 </div>
                 <div class="card-footer">
                     <p class="text-light description" style="width: 350px;">1/3 lb. 50/50 beef & house pork chorizo patty,
@@ -131,8 +129,8 @@
                 <h1 class="text-white">July</h1>
                 <h3 class="text-white">MC5</h3>
             </div>
-            <div class="card-body">
-                <img src="image/b1.jpg" class="img-fluid" style="width: 350px; height: 300px">
+            <div class="card-body p-0">
+                <img src="image/b1.jpg" class="img-fluid rounded" style="width: 350px; height: 300px">
             </div>
             <div class="card-footer">
                 <p class="text-light description" style="width: 350px;">
@@ -159,7 +157,7 @@
                 <h1 class="text-white">June</h1>
                 <h3 class="text-white">PATTY SMITH</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body p-0">
                 <img src="image/b3.png" class="img-fluid" style="width: 350px; height: 300px">
             </div>
             <div class="card-footer">
@@ -180,9 +178,10 @@
         </div>
     </div>
 
+<!-- News Section -->
 
     <h1 class="text-center text-light display-1 txtBanner">News</h1>
-    <banner class="container">
+    <banner class="container-fluid">
         <div class="d-flex justify-content-evenly flex-wrap">
         <div class="col-md-3"></div>   
         <div class="col-md-6">
@@ -193,6 +192,8 @@
     </banner>
     <br><br><br><br><br><br><br>
 <!-- end of codes for banner -->
+
+<!-- Menu Section -->
 
 <div class="bg-black">
     <h1 class="text-light display-1 pt-2 text-center txtBanner menu-space"> Our Menu</h1>
@@ -229,7 +230,11 @@
                     <img src="image/1.jpg" class="img-fluid" style="width: 350px; height: 300px">
                 </div>
                 <div class="card-footer">
+
                     <p class="text-light description" style="width: 350px;">
+
+                    <p class="text-light description p-3">
+
                         cheese, bun, g burg
                         <br><br>
                     </p>
@@ -590,7 +595,7 @@
 
     <div class="container-fluid" id="cont4">
         <h1 class="text-center text-light display-1  txtBanner mt-5 pt-5">Non-burgers</h1>
-        <div class="d-flex justify-content-evenly flex-wrap mt-5 pb-5">
+        <div class="d-flex justify-content-evenly flex-wrap mt-5">
 
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -601,11 +606,16 @@
                     <img src="image/N1.jpg" class="img-fluid" style="width: 350px; height: 300px">
                 </div> 
                 <div class="card-footer">
+
                     <p class="text-light description" style="width: 350px;">
                         hungarian sausage, cheese, onions, pickles, honey mustard
+
+                    <p class="text-light description" style="width: 400px;">
+                        hungarian sausage, cheese, onions,  pickles, honey mustard
+
                         <br>
                     </p>
-                    <div class="d-flex justify-content-between text-white">
+                    <div class="d-flex justify-content-between flex-wrap text-white">
                         <h3>Price: 195</h3>
                         <button class="btn btn-outline-warning btn-dark" data-bs-toggle="modal" data-bs-target="#n1Modal">
                             add to cart
@@ -679,10 +689,11 @@
     </div>
 <!-- #end for cont4 (non-burger)-->
 
+<!-- Download Our Menu -->
+
 <div class="d-flex align-items-center justify-content-around bg-warning pt-5 pb-5" style="height:80px;">
     <a href="image/menu/1.jpg" class="btn btn-outline-danger dl-link-button">Download Our Menu</a>
 </div>
-
 
 <!-- footer  -->
 
@@ -906,19 +917,19 @@
                         <label>Add them up!</label>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add1"><label>patty</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add1"><label>patty</label></span>
                                 <span> 90 pesos</span>
                             </span>   
                         </div>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add2"><label>cheese</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add2"><label>cheese</label></span>
                                 <span> 25 pesos</span>
                             </span>   
                         </div>
                         <div class="form-check">
                             <span class="d-flex justify-content-between">
-                                <span><input class="form-check-input" type="checkbox" id="add3"><label>bacon</label></span>
+                                <span><input class="form-check-input"  type="checkbox" id="add3"><label>bacon</label></span>
                                 <span> 25 pesos</span>
                             </span>   
                         </div>
@@ -966,19 +977,20 @@
                         <br><br>
                         <span class="d-flex justify-content-between">
                             <span><h1 class="modal-txt">CBGB</h1></span>
+
                             <span>145 pesos</span>
+
+                            <span id="amount" value="145">145 Pesos</span>
+
                         </span>
                         <p>cheese, bun, g burg</p>
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity1">
+                             
+                            <label id="price"></label>
+                            
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1046,14 +1058,11 @@
                         <p>cheese, tomato, onions, greens</p>
                         <hr>
                         <div class="form-group">
-                            <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <label>Quantity:</label>
+                            <input type="number" name="txt" id="quantity2">
+                             
+                            <label id="price2"></label>
+                           
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1122,13 +1131,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity3">
+                             
+                            <label id="price3"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1197,13 +1202,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity4">
+                             
+                            <label id="price4"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1272,13 +1273,9 @@
                         <hr>
                         <div class="form-group">
                             <label>Quantity: </label>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
+                            <input type="number" name="txt" id="quantity5">
+                             
+                            <label id="price5"></label>
                         </div>
                         <hr>
                         <label>Add them up!</label>
@@ -1982,6 +1979,18 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+        <script src="heyho.js"></script>
+        <script src="heyho2.js"></script>
+       
     
 </body>
 <script src="js/bootstrap.bundle.js"></script>
