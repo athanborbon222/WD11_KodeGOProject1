@@ -118,8 +118,8 @@ function cartNumbers(products) {
             productContainer.innerHTML = '';
             Object.values(cartItems).map( item => {
                 productContainer.innerHTML += `
-                
-                <table class="cartcont rounded">
+                <div class="d-flex flex-row  flex-wrap">
+                <table class="cartcont rounded ms-2">
                
 
                 <tr>
@@ -155,6 +155,7 @@ function cartNumbers(products) {
                 </td>
                 </tr>
                 </table>
+                </div>
 
                 `
                 
