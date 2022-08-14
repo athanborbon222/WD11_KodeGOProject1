@@ -10,39 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Cart</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-black">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="index.html">
-            <img src="image/111.png"  style="width: 10%; height: 10%" class="rounded-circle">&nbsp; Hey! Ho! Garage Burger</a>
-            
-          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-light"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="index.html">Menu</a>
-              </li>
-              <li class="nav-item"> 
-                <a class="nav-link text-light" href="#">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="About.html">About Us</a>
-              </li>
-              <li class="cart"> <a class="btn btn-outline-danger nav-link-button" type="submit" href="cart.html"><i class="fa-solid fa-cart-plus"></i><span class="text-white">0</span></a></li>
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+  <header class="d-flex">
+    <div class="brand">
+        <a href="index.html">
+            <img src="image/111.png"> Hey! Ho! Garage Burger</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#OurMenu">Menu</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
+        </ul>
+    </nav>
+    <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-view">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#OurMenu">Menu</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
+        </ul>
+    </div>
+  </header>
 
      
       <div class="d-flex justify-content-center flex-wrap">
@@ -71,6 +71,47 @@
 
       
 
+          <!-- footer  -->
+
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-items">
+                  <ul>
+                      <li><h4>Address</h4></li> 
+                      <li><p> Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines</p></li>
+                  </ul>
+              </div>
+              <div class="footer-items"> 
+                  <ul>
+                      <h4>Our Menu</h4>
+                      <li><a href="index.html#BOTM">Burgers of the Month</a></li>
+                      <li><a href="index.html#OurMenu">Menu</a></li>
+                      <li><a href="image/menu/1.jpg">Download Our Menu</a></li>
+                  </ul>
+              </div>
+              <div class="footer-items">
+                  <ul>
+                      <h4>Information</h4>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="about.html#map">Location Map</a></li>
+                      <li><a href="about.html#team">Meet the Team</a></li>
+                  </ul>
+              </div>
+              <div class="footer-items">
+                  <ul>
+                      <li><h4>follow us</h4></li>
+                      <li class="social-links">
+                          <a href="https://www.facebook.com/heyhogarageburgs"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/heyhogburgs"><i class="fab fa-instagram"></i></a>
+                      </li>
+                  </ul> 
+              </div>
+          </div>
+      </div>
+  </footer>
+
+<!-- footer end -->
 <script src="heyho.js"></script>
     
 </body>
