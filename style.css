@@ -56,11 +56,13 @@ background-attachment: fixed;
 .description, label{
     font-family: 'K2D';
     font-size: medium;
+    text-transform: inherit;
 }
 
 p{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: 'K2D';
+    text-align: justify;
 }
 
 .cardshadow{
@@ -141,3 +143,18 @@ p{
 }
 
 
+/* card style for menu description */
+#cont1 .card-footer p, #cont2 .card-footer p, #cont3 .card-footer p, #cont4 .card-footer p{
+    width: 350px;
+    height: 65px;
+}
+
+#cont1 .card-body img, #cont2 .card-body img,#cont3 .card-body img, #cont4 .card-body img,.BOTM img{
+    width: 350px;
+    height: 300px;
+}
+
+.BOTM p{
+    width: 350px;
+    height: 105px;
+}
