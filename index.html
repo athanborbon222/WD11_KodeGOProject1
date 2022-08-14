@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
@@ -17,6 +19,32 @@
 
 
 <body>
+
+
+    <header class="d-flex">
+        <div class="brand">
+            <a href="index.html">
+                <img src="image/111.png"> Hey! Ho! Garage Burger</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#OurMenu">Menu</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
+            </ul>
+        </nav>
+        <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-view">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#OurMenu">Menu</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -43,11 +71,10 @@
               </li>
               <li class="cart"> <a class="btn btn-outline-danger nav-link-button" type="submit" href="cart.html"><i class="fa-solid fa-cart-plus"></i><span class="text-white">0</span></a></li>
               
+
             </ul>
-            
-          </div>
         </div>
-      </nav>
+    </header>
       
       
         <!-- First Carousel -->
@@ -89,9 +116,8 @@
         <!-- Next -->
     </div>
     <br><br>
-    
 
-
+    <!-- Burgers of the Month -->
 
     <h1 class="text-center text-light display-1 txtBanner" id="BOTM">Burgers of the Month</h1>    
     <div class="d-flex justify-content-evenly flex-wrap mt-5">
@@ -180,6 +206,7 @@
         </div>
     </div>
 
+<!-- News Section -->
 
     <h1 class="text-center text-light display-1 txtBanner">News</h1>
     <banner class="container-fluid">
@@ -194,23 +221,27 @@
     <br><br><br><br><br><br><br>
 <!-- end of codes for banner -->
 
-<h1 class="text-light display-1 text-center txtBanner"> Our Menu</h1>
-    <div class="container-fluid  sticky-top" id="OurMenu">
-        <div class="row pt-5 pb-5 flex-wrap justify-content-around text-center" style="background-color: #8C1111;">
-            <div class="col-md-3 text-white">
-                <a href="#cont1" class="subMenu display-6">BURGERS</a>
-            </div>
-            <div class="col-md-3 text-white">
-                <a href="#cont2" class="subMenu  display-6">WINGKRONIZED</a>
-            </div>
-            <div class="col-md-3">
-                <a href="#cont3" class="subMenu   display-6">SIDEKICKS</a>
-            </div>
-            <div class="col-md-3">
-                <a href="#cont4" class="subMenu  display-6">NON BURGERS</a>
-            </div>
+<!-- Menu Section -->
+
+<div class="bg-black">
+    <h1 class="text-light display-1 pt-2 text-center txtBanner menu-space"> Our Menu</h1>
+</div>
+<div class="container-fluid sticky-top menu-space" id="OurMenu">
+    <div class="row pt-3 pb-3 flex-wrap text-center" style= "background-color: #8C1111;">
+        <div class="col-md-3 text-white">
+            <a href="#cont1" class="subMenu display-6">BURGERS</a>
+        </div>
+        <div class="col-md-3 text-white">
+            <a href="#cont2" class="subMenu  display-6">WINGKRONIZED</a>
+        </div>
+        <div class="col-md-3">
+            <a href="#cont3" class="subMenu   display-6">SIDEKICKS</a>
+        </div>
+        <div class="col-md-3">
+            <a href="#cont4" class="subMenu  display-6">NON BURGERS</a>
         </div>
     </div>
+</div>
     <br><br><br>      
     <!-- end of submenu navigation -->
 
@@ -648,7 +679,7 @@
                     <br>
                     <h2 class="text-white">CHICK TAYLOR</h2>
                 </div>
-                <div class="card-body cardbg p-0">
+                <div class="card-body">
                     <img src="image/N3.png" class="img-fluid" style="width: 350px; height: 300px">
                 </div> 
                 <div class="card-footer">
@@ -686,6 +717,12 @@
     </div>
 <!-- #end for cont4 (non-burger)-->
 
+<!-- Download Our Menu -->
+
+
+<div class="d-flex align-items-center justify-content-around bg-warning pt-5 pb-5" style="height:80px;">
+    <a href="image/menu/1.jpg" class="btn btn-outline-danger dl-link-button">Download Our Menu</a>
+</div>
 
 <div class="d-flex align-items-center justify-content-around bg-black" style="height:80px;">
     <a href="image/menu/1.jpg" class="btn btn-outline-danger body-main-button">Download Our Menu</a>
@@ -695,41 +732,48 @@
     <div class="invisible">invisible text</div>
 
 
+
 <!-- footer  -->
 
-    <footer class="bg-black">
-        <div class="container-fluid bg-black  pt-5 pb-5">
-        <div class="d-flex  justify-content-around flex-wrap">
-        <div class="col-md-1"></div>
-        <div class="col-md-2">
-        <img src="image/111.png" class="img-fluid-circle" style="width: 100px; height: 100px;">
-        <p class="text-light mt-2">Address: Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines<p>
-         </div>
-         <!-- imagelogo footer -->
-         <div class="col-md-2"></div>
-         <div class="col-md-2">
-            <h3 class="h3 text-light">Our Menu</h3>
-            <a href="index.html#BOTM" class="text-light">Burgers of the Month</a><br>
-            <a href="index.html#OurMenu" class="text-light">Menu</a><br>
-            <a href="image/menu/1.jpg" class="text-light">Download Our Menu</a>
-         </div>
-         <div class="col-md-2">
-            <h3 class="h3 text-light">Information</h3>
-            <a href="about.html" class="text-light">About Us</a><br>
-            <a href="about.html#map" class="text-light">Location Map</a><br>
-            <a href="about.html#team" class="text-light">Meet the Team</a>
-         </div>
-         <div class="col-md-2">
-            <h3 class="h3 text-light">Social Handles</h3>
-            <a href="https://www.facebook.com/heyhogarageburgs" class="text-light"><i class="fa-brands fa-facebook fa-2xl p-2"></i>&nbsp;Facebook</a><br><br>
-            <a href="https://www.instagram.com/heyhogburgs" class="text-light"><i class="fa-brands fa-instagram-square fa-2xl p-2"></i>&nbsp;Instagram</a><br>
-         </div>
-         <div class="col-md-1"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-items">
+                <ul>
+                    <li><h4>Address</h4></li> 
+                    <li><p> Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines</p></li>
+                </ul>
+            </div>
+            <div class="footer-items"> 
+                <ul>
+                    <h4>Our Menu</h4>
+                    <li><a href="index.html#BOTM">Burgers of the Month</a></li>
+                    <li><a href="index.html#OurMenu">Menu</a></li>
+                    <li><a href="image/menu/1.jpg">Download Our Menu</a></li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <ul>
+                    <h4>Information</h4>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#map">Location Map</a></li>
+                    <li><a href="about.html#team">Meet the Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <ul>
+                    <li><h4>follow us</h4></li>
+                    <li class="social-links">
+                        <a href="https://www.facebook.com/heyhogarageburgs"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/heyhogburgs"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul> 
+            </div>
         </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
-<!-- footer end -->
+<!-- footer -->
 
         <!-- Start of Modals -->
 
@@ -801,9 +845,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -876,9 +920,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -951,9 +995,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1028,9 +1072,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn-secondary add-cart cart1" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1100,9 +1144,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary add-cart cart2" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1171,9 +1215,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary add-cart cart3" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1242,9 +1286,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary add-cart cart4" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1313,9 +1357,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary add-cart cart5" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1388,9 +1432,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1463,9 +1507,9 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1539,9 +1583,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1581,9 +1625,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1619,9 +1663,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1657,9 +1701,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1696,9 +1740,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1733,9 +1777,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1771,9 +1815,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1809,9 +1853,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1850,9 +1894,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1888,9 +1932,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1926,9 +1970,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1963,9 +2007,9 @@
                         </div>
                         <hr>
                         <br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Proceed</button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal">Check Cart</button>
+                        <div class="modal-footer justify-content-between">
+                            <p>Total Cost:</p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">BUY THIS</button>
                         </div>
                     </div>
                 </div>
@@ -1986,4 +2030,9 @@
     
 </body>
 <script src="js/bootstrap.bundle.js"></script>
+<script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
 </html>
