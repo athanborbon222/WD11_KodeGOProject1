@@ -165,7 +165,7 @@ p{
 
     display: flex;
     position: block;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0 auto;
    
 
