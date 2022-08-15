@@ -48,6 +48,7 @@ function onLoadCartNumbers(){
 
     if (productNumbers){
         document.querySelector('.cart span').textContent = productNumbers;
+        
     }
 }
 
@@ -152,7 +153,7 @@ function cartNumbers(products) {
                 </td>
 
                 <td>
-                <div class= "total text-white ms-5"><span class="text-white txtBanner display-3 ms-5 ps-5"> ${item.incart * item.price}</span></div>
+                <div class= "total text-white ms-5"><span class="text-white txtBanner display-3 ms-5 ps-5 me-5"> ${item.incart * item.price}</span></div>
                 </td>
                 
 
