@@ -26,6 +26,12 @@ let products = [
             tag: '4',
             price: 220,
             incart: 0
+        },
+        {
+            name: "54-56",
+            tag: '5',
+            price: 210,
+            incart: 0
         }
 ];
 
@@ -118,8 +124,8 @@ function cartNumbers(products) {
             productContainer.innerHTML = '';
             Object.values(cartItems).map( item => {
                 productContainer.innerHTML += `
-                <div class="d-flex flex-row  flex-wrap">
-                <table class="cartcont rounded ms-2">
+                <div class="d-flex justify-content-evenly  flex-wrap">
+                <table class="cartcont rounded">
                
 
                 <tr>
