@@ -12,6 +12,10 @@ background-attachment: fixed;
    
 }
 
+.btn-secondary{
+    font-family: 'K2D';
+}
+
 .menu-space{
     margin: 0;
 }
@@ -143,7 +147,7 @@ p{
 
 /* Payment and Delivery Page*/
 
-.paymentCotnt .input-group, .paymentCotnt .form-floating{
+.paymentCotnt .input-group, .paymentCotnt .form-floating, .input-group{
     padding-bottom: 8px;
 
 }
