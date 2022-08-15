@@ -5,31 +5,31 @@ let products = [
 
         {
             name: "CBGB",
-            tag: '1',
+            tag: 1,
             price: 145,
             incart: 0
         },
         {
             name: "HEY HO CLASSIC",
-            tag: '2',
+            tag: 2,
             price: 165,
             incart: 0
         },
         {
             name: "ABRACADAVER",
-            tag: '3',
+            tag: 3,
             price: 195,
             incart: 0
         },
         {
             name: 'TIME BOMB',
-            tag: '4',
+            tag: 4,
             price: 220,
             incart: 0
         },
         {
             name: "54-56",
-            tag: '5',
+            tag: 5,
             price: 210,
             incart: 0
         }
@@ -124,7 +124,10 @@ function cartNumbers(products) {
             productContainer.innerHTML = '';
             Object.values(cartItems).map( item => {
                 productContainer.innerHTML += `
-                <div class="d-flex justify-content-evenly  flex-wrap">
+                <div class="container">
+                <div class="row g-3 d-flex flex-wrap">
+                <div class= "col-md-1"></div>
+                <div class= "col-md-10">
                 <table class="cartcont rounded">
                
 
@@ -154,15 +157,19 @@ function cartNumbers(products) {
                 </div>
                 </td>
 
-                <td>
+                <td class="p-5">
                 <div class= "total text-white ms-5"><span class="text-white txtBanner display-3 ms-5 ps-5"> ${item.incart * item.price}</span></div>
                 </td>
                 
 
-
                 </tr>
                 </table>
                 </div>
+                <div class= "col-md-1"></div>
+                </div>
+                </div>
+
+                <br><br>
 
                 `
                 
