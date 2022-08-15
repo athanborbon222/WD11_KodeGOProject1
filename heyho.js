@@ -132,7 +132,7 @@ function cartNumbers(products) {
                 <td>
                 <div class="product">
                 <i class="fa-solid fa-circle-xmark"></i> 
-                <img src="/image/${item.tag}.jpg" class="img-fluid rounded ms-5" style="width: 250px; height: 250px">
+                <img src="/image/${item.tag}.jpg" class="img-fluid rounded m-5" style="width: 250px; height: 250px; padding-right:50px">
                 <br>
                 <span class="text-white txtBanner h5 ms-2 mt-2">${item.name}</span>
                 </div>
@@ -156,9 +156,6 @@ function cartNumbers(products) {
                 
 
 
-                <td class="ms-5 p-3">
-                <button class="btn btn-outline-warning btn-dark ms-5">Purchase</button>
-                </td>
                 </tr>
                 </table>
                 </div>
