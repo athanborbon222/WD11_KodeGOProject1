@@ -147,7 +147,7 @@ p{
 
 /* Payment and Delivery Page*/
 
-.paymentCotnt .input-group, .paymentCotnt .form-floating, .input-group{
+.paymentCotnt .input-group, .paymentCotnt .form-floating, .input-group, .form-floating{
     padding-bottom: 8px;
 
 }

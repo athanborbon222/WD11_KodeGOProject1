@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Cart</title>
+</head>
+<style>
+    .cart-style td{
+        font-family: 'K2D';
+        color: white;
+        font-size: 20px;
+    }
+
+    .cart-style img{
+        width: 100px;
+    }
+
+    .cart-style{
+        max-width: 1170px;
+        margin: auto;
+    }
+</style>
+<body>
+
+  <header class="d-flex">
+    <div class="brand">
+        <a href="index.html">
+            <img src="image/111.png"> Hey! Ho! Garage Burger</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#OurMenu">Menu</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
+        </ul>
+    </nav>
+    <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-view">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#OurMenu">Menu</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
+        </ul>
+    </div>
+  </header>
+
+  <div class="container-fluid cart-style" style="padding-top: 150px; padding-bottom: 150px;">
+    <div class="row bg-black p-5 rounded align-items-center">
+        <div class="col-md-8" style="padding-right: 30px; padding-left: 30px; padding-bottom: 80px;">
+            <table class="table bg-black">
+                <tr class="">
+                    <td class="">Order Item</td>
+                    <td class="">Unit Cost</td>
+                    <td class="">Quantity</td>
+                    <td class="">Amount</td>
+                </tr>
+                <tr class="">
+                    <td class=""><img src="image/1.jpg" alt="">&nbsp;CBGG</td>
+                    <td class="">145</td>
+                    <td class="">2</td>
+                    <td class="">290</td>
+                </tr>
+                <tr class="">
+                    <td class=""><img src="image/2.jpg" alt="">&nbsp;Hey Ho Classic</td>
+                    <td class="">165</td>
+                    <td class="">1</td>
+                    <td class="">165</td>
+
+                </tr>
+                <tr class="">
+                    <td class=""><img src="image/3.jpg" alt="">Abracadaver</td>
+                    <td class="">195</td>
+                    <td class="">1</td>
+                    <td class="">195</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="">Total</td>
+                    <td class="">4</td>
+                    <td class="">650</td>
+                </tr>
+            </table>
+            <button class="btn btn-primary form-control">Proceed to checkout</button>
+        </div>
+        <div class="col-md-4 bg-black" style="padding-right: 30px; padding-left: 30px;">
+            <h1 class="text-center text-white">Checkout</h1>
+                        <hr>
+                        <h2 class="text-white">Personal Information</h2>
+                            <div class="input-group">
+                                <label class="input-group-text">Name</label>
+                                <input type="text" class="form-control">
+                            </div> 
+                            <div class="input-group">
+                                <label class="input-group-text">Contact No.</label>
+                                <input type="number" class="form-control">
+                            </div> 
+                        <hr>
+                        <h2 class="text-white">Delivery Details</h2>
+                        <div class="form-floating">
+                            <textarea id="delivery" class="form-control" style="height: 60px"></textarea>
+                            <label for="delivery">Delivery Address:<br></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea id="note" class="form-control" style="height: 60px"></textarea>
+                            <label for="note">Note to Rider:<br></label>
+                        </div>
+                        <hr>
+                        <h2 class="text-white">Payment Options</h2>
+                        <div class="form-check">
+                            <input type="radio">
+                            <label class="text-light">&nbsp;COD</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" disabled>
+                            <label class="text-light">&nbsp;GCASH - *coming soon</label>
+                        </div>
+                        <hr>
+                        <button class="form-control btn btn-primary text-white" style="font-size: 30px;">
+                            place order
+                        </button>
+        </div>
+    </div>
+
+  </div>
+      
+
+          <!-- footer  -->
+
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-items">
+                  <ul>
+                      <li><h4>Address</h4></li> 
+                      <li><p> Big Bend Street Park Homes Subdivision 1773 Muntinlupa City, Philippines</p></li>
+                  </ul>
+              </div>
+              <div class="footer-items"> 
+                  <ul>
+                      <h4>Our Menu</h4>
+                      <li><a href="index.html#BOTM">Burgers of the Month</a></li>
+                      <li><a href="index.html#OurMenu">Menu</a></li>
+                      <li><a href="image/menu/1.jpg">Download Our Menu</a></li>
+                  </ul>
+              </div>
+              <div class="footer-items">
+                  <ul>
+                      <h4>Information</h4>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="about.html#map">Location Map</a></li>
+                      <li><a href="about.html#team">Meet the Team</a></li>
+                  </ul>
+              </div>
+              <div class="footer-items">
+                  <ul>
+                      <li><h4>follow us</h4></li>
+                      <li class="social-links">
+                          <a href="https://www.facebook.com/heyhogarageburgs"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/heyhogburgs"><i class="fab fa-instagram"></i></a>
+                      </li>
+                  </ul> 
+              </div>
+          </div>
+      </div>
+  </footer>
+
+<!-- footer end -->
+    
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+</html>
