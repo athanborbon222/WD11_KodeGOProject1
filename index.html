@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
     <title>Hey! Ho! Garage Burger</title>
 </head>
-
-
-
 
 <body>
 
@@ -42,7 +40,7 @@
             <ul class="mobile-view">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#OurMenu">Menu</a></li>
-                <li><a href="review.html">Review</a></li>
+                <li><a href="review.html">Reviews</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
             </ul>
@@ -88,7 +86,7 @@
         </button>
         <!-- Next -->
     </div>
-    <br><br>
+    
 
     <!-- Burgers of the Month -->
 
@@ -175,7 +173,7 @@
 
 <!-- News Section -->
 
-    <h1 class="text-center text-light display-1 txtBanner">News</h1>
+    <h1 class="text-center text-light display-1 txtBanner" id="News">News</h1>
     <banner class="container-fluid">
         <div class="d-flex justify-content-evenly flex-wrap">
         <div class="col-md-3"></div>   
@@ -185,12 +183,11 @@
         <div class="col-md-3"></div> 
     </div>
     </banner>
-    <br><br><br><br><br><br><br>
 <!-- end of codes for banner -->
 
 <!-- Menu Section -->
 
-<div class="bg-black">
+<div class="bg-black" id="Menu">
     <h1 class="text-light display-1 pt-2 text-center txtBanner menu-space"> Our Menu</h1>
 </div>
 <div class="container-fluid sticky-top menu-space" id="OurMenu">
@@ -208,13 +205,12 @@
             <a href="#cont4" class="subMenu  display-6">NON BURGERS</a>
         </div>
     </div>
-</div>
-    <br><br><br>      
+</div>  
     <!-- end of submenu navigation -->
 
     <div class="container-fluid" id="cont1">
-        <h1 class="text-center text-light display-1  txtBanner">Burgers</h1>
-        <br><br>
+        <h1 class="text-center text-light display-1 txtBanner">Burgers</h1>
+        
         <div class=" d-flex justify-content-evenly flex-wrap mt-5">
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -329,9 +325,6 @@
                 </div>
             </div>
 
-
-
-
             <div class="card cardshadow mb-5">
                 <div class="card-header">
                     <br>
@@ -352,8 +345,6 @@
                     </div>
                 </div>
             </div>
-            
-
 
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -404,8 +395,9 @@
 
 
     <div class="container-fluid" id="cont2">
-        <h1 class="text-center text-light display-1  txtBanner mt-5 pt-5">WingKronized</h1>
+        <h1 class="text-center text-light display-1  txtBanner">WingKronized</h1>
         <div class="d-flex justify-content-evenly flex-wrap mt-5 pb-5">
+
             <div class="card cardshadow mb-5">
                 <div class="card-header">
                     <br>
@@ -428,8 +420,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -454,9 +444,6 @@
                 </div>
             </div>
 
-
-
-
             <div class="card cardshadow mb-5">
                 <div class="card-header">
                     <br>
@@ -479,12 +466,13 @@
                     </div>
                 </div> 
             </div>
+
         </div>
     </div>
     <!-- end cont2 (wingkronized)-->
 
     <div class="container-fluid" id="cont3">
-        <h1 class="text-center text-light display-1  txtBanner mt-5 pt-5">SideKicks</h1>
+        <h1 class="text-center text-light display-1 txtBanner">SideKicks</h1>
         <div class="d-flex justify-content-evenly flex-wrap mt-5 pb-5">
 
             <div class="card cardshadow mb-5">
@@ -505,8 +493,6 @@
                 </div>
             </div>
 
-
-
             <div class="card cardshadow mb-5">
                 <div class="card-header">
                     <br>
@@ -524,7 +510,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="card cardshadow mb-5">
                 <div class="card-header">
@@ -573,8 +558,8 @@
 
 
     <div class="container-fluid" id="cont4">
-        <h1 class="text-center text-light display-1  txtBanner mt-5 pt-5">Non-burgers</h1>
-        
+        <h1 class="text-center text-light display-1  txtBanner">Non-burgers</h1>
+
         <div class="d-flex justify-content-evenly flex-wrap mt-5">
 
             <div class="card cardshadow mb-5">

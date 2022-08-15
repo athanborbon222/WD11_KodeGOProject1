@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Cart</title>
 </head>
 <body>
@@ -37,7 +37,7 @@
         <ul class="mobile-view">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#OurMenu">Menu</a></li>
-            <li><a href="review.html">Review</a></li>
+            <li><a href="review.html">Reviews</a></li>
             <li><a href="about.html">About Us</a></li>
             <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
         </ul>
@@ -49,24 +49,46 @@
         <div class="col-md-8 cartbox mt-5">
         <div class="products"></div>
         </div>
-                    <div class="col-md-3 paymentCotnt bg-black rounded">
-                        <h1 class="text-center text-white mt-5">Payment & Delivery</h5>
-                          <div class="input-group p-3">
-                            <label class="input-group-text">Contact# :</label>
-                            <input type="text" class="form-control">
+                    <div class="col-md-3 paymentCotnt bg-black rounded p-4">
+                        <h1 class="text-center text-white mt-5">Payment & Delivery</h1>
+                        <hr>
+                        <h2 class="text-white">Personal Information</h2>
+                            <div class="input-group">
+                                <label class="input-group-text">Name</label>
+                                <input type="text" class="form-control">
+                            </div> 
+                        <div class="input-group">
+                            <label class="input-group-text">Contact No.</label>
+                            <input type="number" class="form-control">
                         </div> 
-                          <br>
-                        <div class="input-group p-3">
-                          <label class="input-group-text">Name:</label>
-                          <input type="text" class="form-control">
-                      </div> 
-                      <div class="form-floating mt-5 p-2">
-                        <label for="addresstxtbox">Location/Address:</label>
-                        <textarea class="form-control locationtextarea" id="addresstxtbox" rows="3"  placeholder="Location/Address:"></textarea>
-                    </div>
+                        <hr>
+                        <h2 class="text-white">Delivery Details</h2>
+                        <div class="form-floating">
+                            <textarea id="delivery" class="form-control" style="height: 60px"></textarea>
+                            <label for="delivery">Delivery Address:<br></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea id="note" class="form-control" style="height: 60px"></textarea>
+                            <label for="note">Note to Rider:<br></label>
+                        </div>
+                        <hr>
+                        <h2 class="text-white">Payment Options</h2>
+                        <div class="form-check">
+                            <input type="radio">
+                            <label class="text-light">&nbsp;COD</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" disabled>
+                            <label class="text-light">&nbsp;GCASH - *coming soon</label>
+                        </div>
+                        <hr>
+                        <button class="form-control btn btn-primary text-white" style="font-size: 30px;">
+                            place order
+                        </button>
+
                     </div> 
                     <div class="col-sm-1"></div>
-          </div>
+        </div>
        
 
       

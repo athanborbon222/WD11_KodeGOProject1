@@ -4,7 +4,7 @@
 }
 
 body {
-background-image: url('image/plate.jpg');
+background-image: url('/image/plate.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -18,32 +18,15 @@ background-attachment: fixed;
 
 
 
-
-
-.nav-link, .nav-link-button{
-    width:150px;
-    font-family: 'Koulen', cursive;
-    font-size: 2vw;
-}
-
 .dl-link-button{
     font-family: 'Koulen', cursive;
     font-size: 2vw;
 }
 
-.navbar-brand{
-    
-    font-family: 'Koulen', cursive;
-    font-size: 3vw;
-}
-
 .carousel-item img{
     object-fit: cover;
-
     object-position: cover;
     min-width: 100%;
-    
-
     object-position: center;
         
 
@@ -96,8 +79,6 @@ p{
     font-family: 'Koulen', cursive;
 }
 
-
-
 .map-wrapper{
     max-width: 700px;
     border: 3px solid black;
@@ -143,6 +124,11 @@ p{
 }
 
 
+
+
+
+
+
 /* card style for menu description */
 #cont1 .card-footer p, #cont2 .card-footer p, #cont3 .card-footer p, #cont4 .card-footer p{
     width: 350px;
@@ -157,4 +143,49 @@ p{
 .BOTM p{
     width: 350px;
     height: 105px;
+}
+
+/* modal check box */
+
+.form-check, .modal label, .modal .form-group{
+    padding-bottom: 5px;
+}
+
+/* section paddings */
+
+#BOTM, #News, #Down, #map{
+    padding-top: 100px;
+}
+
+#Menu, #cont1, #cont2, #cont3, #cont4{
+    margin-top: 100px;
+}
+
+#cont4, #team-card{
+    margin-bottom: 100px;
+}
+
+#hey, #map, #team{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* about us social links*/
+
+.SNS a{
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.SNS a i:hover{
+    color: #FFA900;
+    font-size: 35px;
+    transition: all 0.2s ease;
+}
+
+/* Payment and Delivery*/
+
+.paymentCotnt .input-group, .paymentCotnt .form-floating{
+    padding-bottom: 8px;
+
 }

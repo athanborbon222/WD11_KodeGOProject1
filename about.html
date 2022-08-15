@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Koulen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
     <title>About Us</title>
 
 </head>
@@ -40,16 +40,14 @@
             <ul class="mobile-view">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#OurMenu">Menu</a></li>
-                <li><a href="review.html">Review</a></li>
+                <li><a href="review.html">Reviews</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="cart"><a id="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart:&nbsp;<span class="text-white">0</span></a></li>
             </ul>
     </header>
 
-
-      <br><br><br><br>
     
-    <h1 class="text-center text-light display-1 txtBanner">Hey Ho!</h1><br><br>
+    <h1 class="text-center text-light display-1 txtBanner" id="hey">Hey Ho!</h1>
 
     <div class="container about-us">
       <div class="row align-items-center">
@@ -64,10 +62,7 @@
     </div>
     
 
-
-    <br><br>
     <h1 class="text-center text-light display-1 txtBanner" id="map">Visit Us</h1>
-    <br><br>
 
     <div class="container">
     <div class="row d-flex flex-wrap justify-content-around">
@@ -78,11 +73,10 @@
 
     </div>
     </div>
-    <br><br><br>
 
   <!-- Team Members -->
-    <h1 class="text-center text-light display-1 txtBanner" id="team">Meet the team</h1><br><br>   
-    <div class="d-flex justify-content-evenly flex-wrap mt-5">
+    <h1 class="text-center text-light display-1 txtBanner" id="team">Meet the team</h1>   
+    <div class="d-flex justify-content-evenly flex-wrap mt-5" id="team-card">
             
             <div class="card cardshadow mb-5">
                 <div class="card-header text-center">
@@ -93,15 +87,19 @@
                     <img src="image/team/1.jpg" class="img-fluid" style="width: 300px; height: 300px">
                 </div>
                 <div class="card-footer">
-                    <p class="text-light description" style="width: 350px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus, ex aspernatur quod dolor corrupti nisi impedit animi reiciendis rem, adipisci sequi fuga fugiat itaque, numquam nam voluptas sapiente est!
-                        <br><br>
+                    <p class="text-light description" style="width: 350px; height: 130px">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus, ex aspernatur quod dolor corrupti nisi impedit animi reiciendis rem, adipisci sequi fuga fugiat itaque, numquam nam voluptas sapiente est!
                     </p>
-                    <div class="d-flex justify-content-between text-white">
-                        <span><h3 class="btn btn-outline-warning">FB</h3>&nbsp;<h3 class="btn btn-outline-warning">IG</h3>&nbsp;<h3 class="btn btn-outline-warning">Ln</h3></span>
+                    <div class="d-flex justify-content-between text-white SNS">
+                        <span>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </span>
                         <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
                             contact me
                         </button>
-                    </div>
+                      </div>
                 </div>
             </div>
 
@@ -114,21 +112,28 @@
                   <img src="image/team/2.jpg" class="img-fluid" style="width: 300px; height: 300px">
               </div>
               <div class="card-footer">
-                  <p class="text-light description" style="width: 350px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque reprehenderit. Pariatur, est expedita fuga dignissimos quae repellendus ipsam inventore provident dolorum, facere sed, voluptatem dolores?
-                      <br><br>
+                  <p class="text-light description" style="width: 350px; height:130px;">
+                    Industrial Engineer, CLSSYB<br>
+                    Skills:<br>
+                    Graphic Designing, Layout, Photography<br>
+                    Interests:<br>
+                    Food, Cooking, Anime, Travel, Music, and Arts<br>
                   </p>
-                  <div class="d-flex justify-content-between text-white">
-                      <span><h3 class="btn btn-outline-warning">FB</h3>&nbsp;<h3 class="btn btn-outline-warning">IG</h3>&nbsp;<h3 class="btn btn-outline-warning">Ln</h3></span>
-                      <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
-                          contact me
-                      </button>
+                  <div class="d-flex justify-content-between text-white SNS">
+                    <span>
+                        <a href="https://www.facebook.com/benjamentorres"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bebentorres"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mel-benjamen-torres-405206109"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </span>
+                    <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bb1Modal">
+                        contact me
+                    </button>
                   </div>
               </div>  
           </div>
         </div>
   
     </div>
-    <br><br><br><br>
 
     <!-- footer  -->
 
